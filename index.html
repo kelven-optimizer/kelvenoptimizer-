@@ -216,14 +216,14 @@
                 </div>
                 <p class="copyright">
                     © 2025 KelvenOS Optimizer<br>
-                    Scripts carregados diretamente de: github.com/kelven-optimizer/kelvenoptimizer
+                    Scripts carregados diretamente de: https://github.com/kelven-optimizer/kelvenoptimizer
                 </p>
             </div>
         </div>
     </footer>
 
     <script>
-        // Configuração do GitHub
+        // ✅ CONFIGURAÇÃO FIXA DO SEU REPOSITÓRIO
         const GITHUB = {
             owner: 'kelven-optimizer',
             repo: 'kelvenoptimizer',
@@ -238,141 +238,131 @@
             'txt': { color: '#A0A0B0', label: 'TXT', icon: 'fa-file-alt' }
         };
 
-        // Análise detalhada de cada script baseado no nome
-        const SCRIPT_ANALYSIS = {
-            'performance': {
-                title: 'Performance Monitor',
-                description: 'Monitor em tempo real que verifica status das otimizações e mostra métricas de CPU/RAM.',
-                features: ['Verifica Power Plan', 'Status Game Mode/DVR', 'Telemetria', 'CPU/RAM real-time', 'Recomendações']
+        // ✅ SCRIPTS FIXOS DO SEU REPOSITÓRIO
+        const SCRIPTS_FIXOS = [
+            {
+                name: '01-performance-powerplan.bat',
+                path: 'scripts/fps-extreme/01-performance-powerplan.bat',
+                download_url: 'https://github.com/kelven-optimizer/kelvenoptimizer/raw/main/scripts/fps-extreme/01-performance-powerplan.bat',
+                type: 'bat',
+                title: 'Performance Power Plan',
+                description: 'Power plan otimizado para máxima performance do sistema.',
+                features: ['Power plan extremo', 'CPU 100%', 'Performance máxima', 'Latência mínima']
             },
-            'limpeza': {
-                title: 'Limpeza de Sistema',
-                description: 'Remove arquivos temporários, cache e limpa completamente o sistema.',
-                features: ['Limpa Temp', 'Cache Windows', 'Limpa lixeira', 'Remove vestígios', 'Libera espaço']
+            {
+                name: '02-cpu-performance.bat',
+                path: 'scripts/fps-extreme/02-cpu-performance.bat',
+                download_url: 'https://github.com/kelven-optimizer/kelvenoptimizer/raw/main/scripts/fps-extreme/02-cpu-performance.bat',
+                type: 'bat',
+                title: 'CPU Performance',
+                description: 'Otimizações específicas para processador e desativa C-states.',
+                features: ['Desativa C-states', 'CPU otimizada', 'Boot rápido', 'Responsividade']
             },
-            'otimizacao': {
-                title: 'Otimização de Sistema',
-                description: 'Melhora performance geral com ajustes no Windows e serviços.',
-                features: ['Otimiza serviços', 'Ajusta Windows', 'Performance geral', 'Mais velocidade', 'Estável']
+            {
+                name: '03-gpu-optimization.bat',
+                path: 'scripts/fps-extreme/03-gpu-optimization.bat',
+                download_url: 'https://github.com/kelven-optimizer/kelvenoptimizer/raw/main/scripts/fps-extreme/03-gpu-optimization.bat',
+                type: 'bat',
+                title: 'GPU Optimization',
+                description: 'Otimizações para placa de vídeo e gráficos.',
+                features: ['GPU otimizada', 'Mais FPS', 'Gráficos fluidos', 'Input lag zero']
             },
-            'ssd': {
-                title: 'SSD Optimizer',
-                description: 'Otimizações específicas para SSDs com TRIM e desativa desfragmentação.',
-                features: ['Desativa desfrag', 'Ativa TRIM', 'Otimiza escrita', 'Prolonga vida', 'SSD boost']
+            {
+                name: '04-memory-optimization.bat',
+                path: 'scripts/fps-extreme/04-memory-optimization.bat',
+                download_url: 'https://github.com/kelven-optimizer/kelvenoptimizer/raw/main/scripts/fps-extreme/04-memory-optimization.bat',
+                type: 'bat',
+                title: 'Memory Optimization',
+                description: 'Otimiza uso de memória RAM e desativa compressão.',
+                features: ['Sem compressão', 'RAM livre', 'Mais FPS', 'Sem travamentos']
             },
-            'rede': {
-                title: 'Otimização de Rede',
-                description: 'Reset TCP/IP, flush DNS e otimizações de conexão para menos lag.',
-                features: ['Reset TCP/IP', 'Flush DNS', 'Otimiza buffers', 'Reduz ping', 'Conexão estável']
+            {
+                name: '05-network-gaming.bat',
+                path: 'scripts/fps-extreme/05-network-gaming.bat',
+                download_url: 'https://github.com/kelven-optimizer/kelvenoptimizer/raw/main/scripts/fps-extreme/05-network-gaming.bat',
+                type: 'bat',
+                title: 'Network Gaming',
+                description: 'Otimizações de rede para gaming com menos lag.',
+                features: ['Reduz ping', 'TCP otimizado', 'Conexão estável', 'Menos lag']
             },
-            'cpu': {
-                title: 'CPU Extrema',
-                description: 'Power plan extremo, desativa C-states para máxima performance do processador.',
-                features: ['Power plan extremo', 'Desativa C-states', 'CPU 100%', 'Latency mínima', 'Overclock']
+            {
+                name: '06-windows-debloat.bat',
+                path: 'scripts/fps-extreme/06-windows-debloat.bat',
+                download_url: 'https://github.com/kelven-optimizer/kelvenoptimizer/raw/main/scripts/fps-extreme/06-windows-debloat.bat',
+                type: 'bat',
+                title: 'Windows Debloat',
+                description: 'Remove aplicativos desnecessários e otimiza o Windows.',
+                features: ['Remove bloatware', 'Sistema leve', 'Boot rápido', 'Performance +']
             },
-            'ram': {
-                title: 'RAM Extrema',
-                description: 'Desativa memory compression e otimiza uso de memória para jogos.',
-                features: ['Sem compressão', 'Paginação otimizada', 'RAM livre', 'Mais FPS', 'Sem travamentos']
+            {
+                name: '07-nvidia-optimizer.bat',
+                path: 'scripts/fps-extreme/07-nvidia-optimizer.bat',
+                download_url: 'https://github.com/kelven-optimizer/kelvenoptimizer/raw/main/scripts/fps-extreme/07-nvidia-optimizer.bat',
+                type: 'bat',
+                title: 'NVIDIA Optimizer',
+                description: 'Otimizações específicas para placas NVIDIA.',
+                features: ['NVIDIA otimizada', 'Drivers otimizados', 'FPS boost', 'Gráficos fluidos']
             },
-            'gpu': {
-                title: 'MSI Mode GPU',
-                description: 'Ativa MSI para GPU, reduz latency e melhora performance gráfica.',
-                features: ['MSI ativado', 'Reduz latency', 'GPU otimizada', 'Mais FPS', 'Input lag zero']
+            {
+                name: '08-amd-optimizer.bat',
+                path: 'scripts/fps-extreme/08-amd-optimizer.bat',
+                download_url: 'https://github.com/kelven-optimizer/kelvenoptimizer/raw/main/scripts/fps-extreme/08-amd-optimizer.bat',
+                type: 'bat',
+                title: 'AMD Optimizer',
+                description: 'Otimizações específicas para placas AMD.',
+                features: ['AMD otimizada', 'Drivers otimizados', 'Performance +', 'Stabilidade']
             },
-            'timer': {
-                title: 'Timer Resolution',
-                description: 'Configura timer do sistema para 0.5ms, máxima precisão para jogos.',
-                features: ['Timer 0.5ms', 'Máxima precisão', 'Input instantâneo', 'Para pros', 'Competitivo']
+            {
+                name: '09-ultimate-fps-booster.bat',
+                path: 'scripts/fps-extreme/09-ultimate-fps-booster.bat',
+                download_url: 'https://github.com/kelven-optimizer/kelvenoptimizer/raw/main/scripts/fps-extreme/09-ultimate-fps-booster.bat',
+                type: 'bat',
+                title: 'Ultimate FPS Booster',
+                description: 'Combinação de todas as otimizações para máximo FPS.',
+                features: ['Máximo FPS', 'Todas otimizações', 'Gaming puro', 'Performance extrema']
             },
-            'hpet': {
-                title: 'HPET Disable',
-                description: 'Desativa High Precision Event Timer para reduzir latency do sistema.',
-                features: ['HPET off', 'Latency mínima', 'Sistema rápido', 'Para gaming', 'Performance']
-            },
-            'game': {
-                title: 'Gaming Mode',
-                description: 'Ativa Game Mode, desativa Game DVR e otimizações para máximo FPS.',
-                features: ['Game Mode on', 'Game DVR off', 'FPS boost', 'Sem interrupções', 'Gaming puro']
-            },
-            'valorant': {
-                title: 'Valorant Optimizer',
-                description: 'Otimizações específicas para Valorant: timer, MSI e TCP tweaks.',
-                features: ['Timer 0.5ms', 'MSI ativado', 'TCP otimizado', 'Para Valorant', 'Mais FPS']
-            },
-            'csgo': {
-                title: 'CS:GO/CS2 Optimizer',
-                description: 'Game DVR off, TCP tweaks específicos para Counter-Strike.',
-                features: ['Game DVR off', 'Source 2 otimizado', 'TCP tweaks', 'Para CS', 'Input lag zero']
-            },
-            'disable': {
-                title: 'Disable Services',
-                description: 'Desativa serviços desnecessários liberando recursos do sistema.',
-                features: ['Serviços off', 'Mais recursos', 'Boot rápido', 'Sistema leve', 'Performance']
-            },
-            'telemetry': {
-                title: 'Disable Telemetry',
-                description: 'Remove completamente telemetria e coleta de dados do Windows.',
-                features: ['Telemetria off', 'Privacidade +', 'Menos uso CPU', 'Bloqueia coleta', 'Anônimo']
-            },
-            'restore': {
-                title: 'System Restore',
-                description: 'Cria backup e permite restaurar configurações originais do Windows.',
-                features: ['Backup seguro', 'Restaura fácil', 'Ponto de restauração', 'Desfaz tudo', 'Segurança']
-            },
-            'backup': {
-                title: 'Backup Configs',
-                description: 'Salva todas as configurações atuais antes de aplicar otimizações.',
-                features: ['Salva tudo', 'Backup completo', 'Restauração fácil', 'Protegido', 'Seguro']
+            {
+                name: 'restore-original.bat',
+                path: 'scripts/fps-extreme/restore-original.bat',
+                download_url: 'https://github.com/kelven-optimizer/kelvenoptimizer/raw/main/scripts/fps-extreme/restore-original.bat',
+                type: 'bat',
+                title: 'Restore Original',
+                description: 'Restaura todas as configurações originais do Windows.',
+                features: ['Backup completo', 'Restaura fácil', 'Segurança total', 'Desfaz tudo']
             }
+        ];
+
+        // ✅ PERFORMANCE MONITOR - SCRIPT ÚNICO
+        const PERFORMANCE_MONITOR = {
+            name: 'KelvenOS-Performance-Monitor.ps1',
+            path: 'scripts/utilities/KelvenOS-Performance-Monitor.ps1',
+            download_url: 'https://github.com/kelven-optimizer/kelvenoptimizer/raw/main/scripts/utilities/KelvenOS-Performance-Monitor.ps1',
+            type: 'ps1',
+            title: 'Performance Monitor',
+            description: 'Monitor em tempo real que verifica status das otimizações e mostra métricas de CPU/RAM.',
+            features: ['Verifica Power Plan', 'Status Game Mode/DVR', 'Telemetria', 'CPU/RAM real-time', 'Recomendações']
         };
 
-        // Função para obter dados do script
-        function getScriptData(filename) {
-            const lowerName = filename.toLowerCase();
-            const extension = filename.split('.').pop().toLowerCase();
-            
-            // Procura correspondência
-            for (const [key, data] of Object.entries(SCRIPT_ANALYSIS)) {
-                if (lowerName.includes(key.toLowerCase())) {
-                    return {
-                        title: data.title,
-                        description: data.description,
-                        features: data.features,
-                        type: extension
-                    };
-                }
-            }
-            
-            // Dados padrão
-            return {
-                title: filename.replace(/\.[^/.]+$/, ""),
-                description: 'Script de otimização para Windows - ' + filename,
-                features: ['Otimização geral', 'Performance melhorada', 'Sistema mais rápido'],
-                type: extension
-            };
-        }
-
-        // Função para criar card de script com download forçado
-        function createScriptCard(file) {
-            const data = getScriptData(file.name);
-            const fileType = FILE_TYPES[data.type] || { color: '#A0A0B0', label: data.type.toUpperCase() };
+        // Função para criar card do Performance Monitor
+        function createPerformanceMonitorCard() {
+            const file = PERFORMANCE_MONITOR;
+            const fileType = FILE_TYPES[file.type];
             
             return `
-                <div class="script-card">
+                <div class="script-card" style="border: 2px solid var(--primary);">
                     <div class="script-header">
-                        <h3 class="script-title">${data.title}</h3>
+                        <h3 class="script-title">🎯 ${file.title}</h3>
                         <span class="script-type" style="background:${fileType.color}20; color:${fileType.color}">${fileType.label}</span>
                     </div>
-                    <p class="script-description">${data.description}</p>
+                    <p class="script-description">${file.description}</p>
                     <ul class="script-features">
-                        ${data.features.map(feature => `<li>${feature}</li>`).join('')}
+                        ${file.features.map(feature => `<li>${feature}</li>`).join('')}
                     </ul>
                     <div class="script-actions">
                         <button class="script-download" onclick="forceDownload('${file.download_url}', '${file.name}')">
-                            <i class="fas fa-download"></i>Baixar
+                            <i class="fas fa-download"></i>Baixar Monitor
                         </button>
-                        <a href="https://github.com/${GITHUB.owner}/${GITHUB.repo}/blob/${GITHUB.branch}/${file.path}" 
+                        <a href="https://github.com/kelven-optimizer/kelvenoptimizer/blob/main/${file.path}" 
                            class="script-view" target="_blank">
                             <i class="fab fa-github"></i>Ver Código
                         </a>
@@ -381,7 +371,34 @@
             `;
         }
 
-        // Função para forçar download direto (CORRIGIDA - SEM CTRL+L)
+        // Função para criar cards dos scripts fixos
+        function createFixedScriptCard(file) {
+            const fileType = FILE_TYPES[file.type];
+            
+            return `
+                <div class="script-card">
+                    <div class="script-header">
+                        <h3 class="script-title">${file.title}</h3>
+                        <span class="script-type" style="background:${fileType.color}20; color:${fileType.color}">${fileType.label}</span>
+                    </div>
+                    <p class="script-description">${file.description}</p>
+                    <ul class="script-features">
+                        ${file.features.map(feature => `<li>${feature}</li>`).join('')}
+                    </ul>
+                    <div class="script-actions">
+                        <button class="script-download" onclick="forceDownload('${file.download_url}', '${file.name}')">
+                            <i class="fas fa-download"></i>Baixar
+                        </button>
+                        <a href="https://github.com/kelven-optimizer/kelvenoptimizer/blob/main/${file.path}" 
+                           class="script-view" target="_blank">
+                            <i class="fab fa-github"></i>Ver Código
+                        </a>
+                    </div>
+                </div>
+            `;
+        }
+
+        // ✅ DOWNLOAD CORRIGIDO - FUNCIONA SEM CTRL+L!
         function forceDownload(url, filename) {
             // Usa fetch para baixar o arquivo como blob e forçar download
             fetch(url)
@@ -452,8 +469,8 @@
             }, 3000);
         }
 
-        // Função para carregar TODOS os scripts do GitHub
-        async function loadAllScripts() {
+        // ✅ CARREGA SCRIPTS FIXOS - SEM DEPENDÊNCIA DA API
+        function loadFixedScripts() {
             const container = document.getElementById('scripts-container');
             const scriptCount = document.getElementById('script-count');
             const terminalCount = document.getElementById('terminal-count');
@@ -462,89 +479,34 @@
             const batCount = document.getElementById('bat-count');
             const regCount = document.getElementById('reg-count');
             const updateTime = document.getElementById('update-time');
-            
+
             try {
-                // Busca todos os arquivos do repositório
-                const response = await fetch(`https://api.github.com/repos/${GITHUB.owner}/${GITHUB.repo}/git/trees/${GITHUB.branch}?recursive=1`);
-                const data = await response.json();
-                
-                let allFiles = [];
-                let ps1Files = 0;
-                let batFiles = 0;
-                let regFiles = 0;
-                
-                // Pega TODOS os arquivos do repositório
-                if (data.tree) {
-                    allFiles = data.tree.filter(item => 
-                        item.type === 'blob' && 
-                        (item.path.endsWith('.bat') || item.path.endsWith('.ps1') || item.path.endsWith('.reg') || item.path.endsWith('.txt'))
-                    );
-                    
-                    // Conta por tipo
-                    allFiles.forEach(file => {
-                        const ext = file.path.split('.').pop().toLowerCase();
-                        if (ext === 'ps1') ps1Files++;
-                        else if (ext === 'bat') batFiles++;
-                        else if (ext === 'reg') regFiles++;
-                    });
-                }
+                // Conta estatísticas
+                const totalFiles = SCRIPTS_FIXOS.length + 1; // +1 para o Performance Monitor
+                const ps1Files = 1; // Performance Monitor
+                const batFiles = SCRIPTS_FIXOS.length;
+                const regFiles = 0;
 
                 // Atualiza estatísticas
-                scriptCount.textContent = allFiles.length;
-                terminalCount.textContent = allFiles.length;
-                totalScripts.textContent = allFiles.length;
+                scriptCount.textContent = totalFiles;
+                terminalCount.textContent = totalFiles;
+                totalScripts.textContent = totalFiles;
                 ps1Count.textContent = ps1Files;
                 batCount.textContent = batFiles;
                 regCount.textContent = regFiles;
                 updateTime.textContent = new Date().toLocaleTimeString('pt-BR');
 
-                // Busca dados detalhados de cada arquivo
-                const filesWithData = [];
-                for (const file of allFiles) {
-                    try {
-                        const fileResponse = await fetch(`https://api.github.com/repos/${GITHUB.owner}/${GITHUB.repo}/contents/${file.path}`);
-                        const fileData = await fileResponse.json();
-                        if (fileData.download_url) {
-                            filesWithData.push({
-                                name: file.path.split('/').pop(),
-                                path: file.path,
-                                download_url: fileData.download_url,
-                                size: fileData.size,
-                                type: fileData.type
-                            });
-                        }
-                    } catch (err) {
-                        console.warn(`Erro ao buscar ${file.path}:`, err);
-                    }
-                }
-
-                // Ordena alfabeticamente
-                filesWithData.sort((a, b) => a.name.localeCompare(b.name));
-
-                // Limpa container
-                container.innerHTML = '';
-
-                // Se não houver scripts
-                if (filesWithData.length === 0) {
-                    container.innerHTML = `
-                        <div style="text-align: center; padding: 3rem; color: var(--text-secondary);">
-                            <i class="fas fa-folder-open" style="font-size: 3rem; margin-bottom: 1rem;"></i>
-                            <p>Nenhum script encontrado no repositório</p>
-                            <p style="font-size: 0.9rem; margin-top: 0.5rem;">
-                                <a href="https://github.com/${GITHUB.owner}/${GITHUB.repo}" target="_blank" style="color: var(--primary);">
-                                    Ver repositório no GitHub
-                                </a>
-                            </p>
-                        </div>
-                    `;
-                    return;
-                }
-
-                // Cria grid e adiciona scripts
+                // Cria o grid com os scripts
                 let gridHTML = '<div class="scripts-grid">';
-                filesWithData.forEach(file => {
-                    gridHTML += createScriptCard(file);
+                
+                // Adiciona o Performance Monitor em destaque
+                gridHTML += createPerformanceMonitorCard();
+                
+                // Adiciona todos os scripts fixos
+                SCRIPTS_FIXOS.forEach(file => {
+                    gridHTML += createFixedScriptCard(file);
                 });
+                
                 gridHTML += '</div>';
                 
                 container.innerHTML = gridHTML;
@@ -554,11 +516,10 @@
                 container.innerHTML = `
                     <div style="text-align: center; padding: 3rem; color: var(--text-secondary);">
                         <i class="fas fa-exclamation-triangle" style="font-size: 3rem; margin-bottom: 1rem; color: var(--warning);"></i>
-                        <p>Erro ao carregar scripts do GitHub</p>
+                        <p>Erro ao carregar scripts</p>
                         <p style="font-size: 0.9rem; margin-top: 0.5rem;">
-                            Verifique sua conexão ou acesse: 
-                            <a href="https://github.com/${GITHUB.owner}/${GITHUB.repo}" target="_blank" style="color: var(--primary);">
-                                GitHub Repository
+                            <a href="https://github.com/kelven-optimizer/kelvenoptimizer" target="_blank" style="color: var(--primary);">
+                                Ver repositório no GitHub
                             </a>
                         </p>
                     </div>
@@ -567,7 +528,7 @@
         }
 
         // Inicializa quando a página carregar
-        document.addEventListener('DOMContentLoaded', loadAllScripts);
+        document.addEventListener('DOMContentLoaded', loadFixedScripts);
 
         // Smooth scrolling
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
