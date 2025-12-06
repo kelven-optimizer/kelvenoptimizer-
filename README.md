@@ -131,13 +131,13 @@ Este projeto está licenciado sob a licença MIT - veja o arquivo [LICENSE](LICE
 
 ## 👥 Comunidade
 
-- **GitHub**: [@kelven-optimizer](https://github.com/kelven-optimizer)
+- **GitHub**: [@kelvenapk](https://github.com/kelvenapk)
 - **Discord**: [Servidor KelvenOS](https://discord.gg/vqRrPT8aQx)
 - **Issues**: Reporte bugs e sugira melhorias
 
 ## 📞 Suporte
 
-- 📧 **Email**: kelven@kelvenos.com
+- 📧 **Email**: kelvenpinheiro710@gmail.com
 - 💬 **Discord**: Disponível no servidor
 - 🐛 **Bug Reports**: Use as [Issues do GitHub](https://github.com/kelven-optimizer/kelvenoptimizer/issues)
 
@@ -153,6 +153,6 @@ Este projeto está licenciado sob a licença MIT - veja o arquivo [LICENSE](LICE
   
 **[⬆ Voltar ao topo](#-kelvenos-optimizer)**
 
-Made with ❤️ by Kelven
+Made with ❤️ by Kelvenapk
   
 </div>
